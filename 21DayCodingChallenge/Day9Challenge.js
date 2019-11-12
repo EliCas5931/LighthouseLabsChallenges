@@ -53,3 +53,28 @@
 //         speed: 38
 //       }
 //     ]
+
+// MY CODE: 
+
+const carPassing = (cars, speed) => {
+    // Code here!
+    
+    cars.push( {
+      
+      'time' : Date.now(),
+      
+      'speed' : speed }
+      
+      );
+    
+    return cars;
+  }
+
+//   Other Solutions:
+
+const carPassing = (cars, speed) => {
+    // Code here!
+    
+    return [...cars, { time: Date.now(), speed}]
+    
+  }
